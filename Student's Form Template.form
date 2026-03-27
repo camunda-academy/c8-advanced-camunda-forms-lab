@@ -241,7 +241,7 @@
       "id": "Field_1jmg8yy"
     },
     {
-      "content": "<style>\n    .quotation-total {\n      border: 1px solid #ccc;\n      padding: 10px;\n      max-width: 300px;\n      margin-left: auto;\n      text-align: right;\n    }\n</style>\n\n\n<div class=\"quotation-total\">\n    <h4>Quotation Total</h4>\n    <p>Subtotal: {{currency}} {{sum(quotationResult[amount])}}</p>\n    <p>Tax ({{tax}}%): {{currency}} {{floor(sum(quotationResult[amount]) * tax/100, 2)}}</p>\n    <hr>\n    <p>Total: {{currency}} {{floor(sum(quotationResult[amount]) * (1+(tax/100)), 2)}}</p>\n</div>\n",
+      "content": "<style>\n    .quotation-total {\n      border: 1px solid #ccc;\n      padding: 10px;\n      max-width: 300px;\n      margin-left: auto;\n      text-align: right;\n    }\n</style>\n\n\n<div class=\"quotation-total\">\n    <h4>Quotation Total</h4>\n    <p>Subtotal: {{currency}} {{sum(quotationResult.amount)}}</p>\n    <p>Tax ({{tax}}%): {{currency}} {{floor(sum(quotationResult.amount) * tax/100, 2)}}</p>\n    <hr>\n    <p>Total: {{currency}} {{floor(sum(quotationResult.amount) * (1+(tax/100)), 2)}}</p>\n</div>\n",
       "label": "HTML",
       "type": "html",
       "layout": {
